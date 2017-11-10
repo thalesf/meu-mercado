@@ -12,7 +12,7 @@
 	<div id="app">
 		<img class="logo" src="img/logo.png">
 		<form action="https://formspree.io/thales.fdasilva@gmail.com" name="listaDeCompras" method="POST">
-			<h1 class="title">Escolha sua lista de compras</h1>
+			<h1 class="title"><span class="yellow">MEU</span> <span class="green">MER</span><span class="red">CADO</span></h1>
 			<h2 class="title-h2">Escolha sua lista de compras</h2>
 			<div class="left">
 				<ul>
@@ -26,8 +26,8 @@
 
 					<li>
 						<img class="produto" src="img/arroz.jpeg">
-						<p><span class="infoprod">Arroz tio joão R$ 15,00</span>
-							<input type="checkbox" class="produtoSoma"  value="15.00" name="Arroz Máximo">		
+						<p><span class="infoprod">Arroz tio joão 5KG R$ 15,00</span>
+							<input type="checkbox" class="produtoSoma"  value="15.00" name="Arroz Tio João">		
 						</p>		
 					</li>
 
@@ -37,13 +37,6 @@
 						<p><span class="infoprod">Macarrão DONA BENTA R$ 10,00</span>
 							<input type="checkbox" class="produtoSoma" value="10.00" name="Macarrão DONA BENTA">	
 						</p>	
-					</li>
-
-
-					<li>
-						<img class="produto" src="img/arroz.jpeg">
-						<p>Arroz tio joão R$ 15,00</p>	
-						<input type="checkbox" class="produtoSoma" value="6.00" name="Arroz tio joão">			
 					</li>
 
 					<li>
@@ -75,30 +68,58 @@
 						<p>VINAGRE PEIXE VINHO BRANCO 750ML <span>R$ 5,00</span></p>	
 						<input type="checkbox" class="produtoSoma" value="5.00" name="VINAGRE PEIXE VINHO BRANCO">			
 					</li>
+					
+					<li>
+						<img class="produto" src="img/cafe.jpg">
+						<p><span id="infoprod" class="infoprod">CAFÉ PILÃO EXPRESSO 10 CAPSULAS SPLENDENTE ITENSIDADE 7 NESPRESSO 520G
+						</span>
+						<input type="checkbox" class="produtoSoma"  value="18.00" name="CAFÉ PILÃO EXPRESSO ">	
+					</p>	
+				</li>
 
-				</ul>
-			</div>
+				<li>
+					<img class="produto" src="img/leite-condensado.jpg">
+					<p><span id="infoprod" class="infoprod">LEITE CONDENSADO NESTLÉ MOÇA LATA 395G</span>
+						<input type="checkbox" class="produtoSoma"  value="5.00" name="LEITE CONDENSADO MOÇA">	
+					</p>	
+				</li>
 
-			<div class="right">	
+				<li>
+					<img class="produto" src="img/quaker.jpg">
+					<p><span id="infoprod" class="infoprod">FARINHA DE AVEIA QUAKER 200G</span>
+						<input type="checkbox" class="produtoSoma"  value="3.00" name="AVEIA QUAKER">	
+					</p>	
+				</li>
 
-				<input type="text" placeholder="Digite o seu nome" name="Nome">
-				<input type="email" placeholder="Digite o seu e-mail" name="e-mail">
-				<input type="tel" placeholder="Digite o seu telefone" name="telefone">
-				<input type="text" placeholder="CEP">
-
-				<label class="resumo">Resumo do Pedido</label>
-				<textarea id="informacoes" name="informacoes" rows="7" disabled=""></textarea>
-				<input type="submit">
-
-				<div class="total">
-					<p>Total R$ <span id="pagamento">0</span></p>
-				</div>
-			</div>
+				<li>
+					<img class="produto" src="img/ana-maria.jpg">
+					<p><span id="infoprod" class="infoprod">BOLO ANA MARIA CHOCOLATE 80G</span>
+						<input type="checkbox" class="produtoSoma"  value="2.50" name="BOLO ANA MARIA">	
+					</p>	
+				</li>
+			</ul>
 		</div>
 
-		
+		<div class="right">	
 
-	</form>
+			<input type="text" placeholder="Digite o seu nome" name="Nome">
+			<input type="email" placeholder="Digite o seu e-mail" name="e-mail">
+			<input type="tel" placeholder="Digite o seu telefone" name="telefone">
+			<input type="text" placeholder="CEP">
+
+			<label class="resumo">Resumo do Pedido</label>
+			<textarea id="informacoes" name="informacoes" rows="7" disabled=""></textarea>
+			<input type="submit">
+
+			<div class="total">
+				<p>Total R$ <span id="pagamento">0</span></p>
+			</div>
+		</div>
+	</div>
+
+
+
+</form>
 </div>
 
 </body>
@@ -131,6 +152,19 @@
 		left: 50%;
 		margin-left: -95px;
 	}
+	.yellow
+	{
+		color: #f0c419;
+	}
+	.green
+	{
+		color: #86cbac;
+	}
+	.red
+	{
+		color: #ff5f5f;
+	}
+
 	h1,
 	input[type="text"],
 	input[type="email"],
@@ -159,6 +193,10 @@
 		background: #fff;
 		margin: 0;
 		padding:0;
+	}
+	.title
+	{ 
+		text-shadow: 1px 3px 3px rgba(62, 56, 56, 0.79);
 	}
 	.title,.title-h2
 	{
